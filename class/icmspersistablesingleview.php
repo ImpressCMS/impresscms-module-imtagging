@@ -28,7 +28,7 @@ class IcmsPersistableRow {
 	var $_header;
 	var $_class;
 
-	function IcmsPersistableRow($keyname, $customMethodForValue=false, $header=false, $class=false) {
+	function __construct($keyname, $customMethodForValue=false, $header=false, $class=false) {
 		$this->_keyname = $keyname;
 		$this->_customMethodForValue = $customMethodForValue;
 		$this->_header = $header;
